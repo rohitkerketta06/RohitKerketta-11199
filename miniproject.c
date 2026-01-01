@@ -47,9 +47,9 @@ int main()
     {
         for (int j = 0; j < c; j++)
         {
-            printf("%d ", a[i][j]); // Prints the element followed by a space
+            printf("%d ", a[i][j]); 
         }
-        printf("\n"); // Moves to the next line after each row
+        printf("\n"); 
     }
     
     scanDangerZones(r, c, a);
