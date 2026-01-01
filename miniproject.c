@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 void scanDangerZones(int r, int c, int b[r][c])
 {
     printf("\nScanning Matrix for Danger Zones...\n");
@@ -39,6 +40,16 @@ int main()
             printf("Position [%d][%d]: ", i, j);
             scanf("%d", &a[i][j]);
         }
+    }
+
+    printf("\nEntered Matrix:\n");
+    for (int i = 0; i < r; i++)
+    {
+        for (int j = 0; j < c; j++)
+        {
+            printf("%d ", a[i][j]); // Prints the element followed by a space
+        }
+        printf("\n"); // Moves to the next line after each row
     }
     
     scanDangerZones(r, c, a);
